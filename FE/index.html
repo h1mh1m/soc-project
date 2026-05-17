@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="top-web">
+        <img src="" alt="">
+        <div class="navigation">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Booking</a>
+            <a href="">Jadwal</a>
+        </div>
+    </nav>
+    <div class="first">
+        <h1 class="judul-awal">SoccerPrime</h1>
+        <p class="text-awal">Your premier destination for soccer field bookings and schedules!</p>
+    </div>
+    <div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="bookings">
+        <h2>Book Your Soccer Field Now!</h2>
+        <form action="/book" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="time">Session Time:</label>
+            <select id="time" name="time" required>
+                <option value="morning">Morning (8 AM - 12 PM)</option>
+                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                <option value="evening">Evening (4 PM - 8 PM)</option>
+            </select>
+            <br>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
