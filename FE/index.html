@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Soccer Prime</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <nav class="top-web">
         <img src="" alt="">
         <div class="navigation">
             <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Booking</a>
-            <a href="">Jadwal</a>
+            <a href="jadwal.html">Jadwal</a>
         </div>
     </nav>
     <div class="first">
         <h1 class="judul-awal">SoccerPrime</h1>
         <p class="text-awal">Your premier destination for soccer field bookings and schedules!</p>
     </div>
-    <div>
-        <div>
-
+    <div class="list-lapangan">
+        <div class="lapangan">
+            <img src="" alt="">
+            <div class="pembatas">
+            <h2>Soccer Field 1</h2>
+            <p>Location: Downtown</p>
+            <p>Price: $50/hour</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum temporibus dolores at. A praesentium voluptatibus atque nostrum nulla magnam impedit quia voluptas! Perspiciatis nisi animi laboriosam minima asperiores rerum.</p>
+            </div>
         </div>
-        <div>
-
+        <div class="lapangan">
+            <img src="" alt="">
+            <div class="pembatas">
+            <h2>Soccer Field 2</h2>
+            <p>Location: Uptown</p>
+            <p>Price: $60/hour</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum temporibus dolores at. A praesentium voluptatibus atque nostrum nulla magnam impedit quia voluptas! Perspiciatis nisi animi laboriosam minima asperiores rerum.</p>
+            </div>
         </div>
-        <div>
-
+        <div class="lapangan">
+            <img src="" alt="">
+            <div class="pembatas">
+            <h2>Soccer Field 3</h2>
+            <p>Location: Midtown</p>
+            <p>Price: $70/hour</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum temporibus dolores at. A praesentium voluptatibus atque nostrum nulla magnam impedit quia voluptas! Perspiciatis nisi animi laboriosam minima asperiores rerum.</p>
+            </div>
         </div>
     </div>
     <div class="bookings">
         <h2>Book Your Soccer Field Now!</h2>
-        <form action="/book" method="POST">
+        <form id="bookingForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <br>
@@ -43,13 +58,17 @@
             <br>
             <label for="time">Session Time:</label>
             <select id="time" name="time" required>
-                <option value="morning">Morning (8 AM - 12 PM)</option>
-                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
-                <option value="evening">Evening (4 PM - 8 PM)</option>
+                <option value="Session1">Session 1 (8 AM - 10 AM)</option>
+                <option value="Session2">Session 2 (10 AM - 12 AM)</option>
+                <option value="Session3">Session 3 ( 1 PM - 3 PM)</option>
+                <option value="Session4">Session 4 (3 PM - 5 PM)</option>
+                <option value="Session5">Session 5 (5 PM - 7 PM)</option>
+                <option value="Session6">Session 6 (7 PM - 9 PM)</option>
             </select>
             <br>
             <button type="submit">Book Now</button>
         </form>
     </div>
+<script src="script.js"></script> 
 </body>
 </html>
